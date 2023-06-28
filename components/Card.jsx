@@ -141,7 +141,7 @@ function CardPokemon({ url }) {
       } else {
         index += 18
       }
-      console.log(index)
+      /* console.log(index) */
       return colorBg[index]
   
     }

@@ -11,8 +11,8 @@ async function getData(id) {
 }
 async function page({ params }) {
   const data = await getData(params.id);
-  console.log(data);
-  console.log(typeof (data.types[0].type.name))
+  /* console.log(data);
+  console.log(typeof (data.types[0].type.name)) */
   //color de fondo
   function cambioColor(tipo) {
     const colorBg = ["bg-[#A4ACAF]", "bg-[#D56723]", "bg-[#3DC6EF]", "bg-[#B97FC9]", "bg-[#AB9842]", "bg-[#A38C21]", "bg-[#729F3F]", "bg-[#7B62A3]", "bg-[#9EB7B8]", "bg-[#FD7D24]", "bg-[#4592C4]", "bg-[#9BCC50]", "bg-[#EED535]", "bg-[#F366B9]", "bg-[#51C4E7]", "bg-[#F16E57]", "bg-[#707070]", "bg-[#FDB9E9]",]
@@ -56,7 +56,7 @@ async function page({ params }) {
     } else {
       index += 18
     }
-    console.log(index)
+    /* console.log(index) */
     return colorBg[index]
 
   }
