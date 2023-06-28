@@ -74,9 +74,7 @@ function CardPokemon({ url }) {
   
   if (poke) {
     return (
-      /*  <div className="cardPokemon cjas">
-            {<Loading/>}
-        </div> */
+    
        
         <div className=" rounded-2xl border border-black border-solid p-2 bg-slate-900">
           <div  >
@@ -150,15 +148,7 @@ function CardPokemon({ url }) {
     const bgColor = cambioColor(dataPokemon.types[0].type.name)
 
   return (
-   /*  <Link href={`info/${dataPokemon.id}`}>
-      <div className="cardPokemon cjas">
-                <div>
-          <img src={imagePokemon} alt="Spiderman" />
-        </div>
-        <h1>{dataPokemon.name}</h1>
-        <p>{dataPokemon.id}</p>
-      </div>
-    </Link> */
+   
     <Link href={`info/${dataPokemon.id}`}>
       <div className=" rounded-2xl border border-black border-solid p-2 bg-slate-900">
         <div className={bgColor} >
@@ -180,70 +170,4 @@ function CardPokemon({ url }) {
 }
 
 export default CardPokemon;
-  /* function cambioColor(tipo) {
-    const colorBg = ["bg-[#A4ACAF]", "bg-[#D56723]", "bg-[#3DC6EF]", "bg-[#B97FC9]", "bg-[#AB9842]", "bg-[#A38C21]", "bg-[#729F3F]", "bg-[#7B62A3]", "bg-[#9EB7B8]", "bg-[#FD7D24]", "bg-[#4592C4]", "bg-[#9BCC50]", "bg-[#EED535]", "bg-[#F366B9]", "bg-[#51C4E7]", "bg-[#F16E57]", "bg-[#707070]", "bg-[#FDB9E9]",]
-    let index = 0
-    if (tipo === "normal") {
-      index += 0
-    } else if (tipo === "fighting") {
-      index += 1
-    } else if (tipo === "flying") {
-      index += 2
-    } else if (tipo === "poison") {
-      index += 3
-    } else if (tipo === "ground") {
-      index += 4
-    } else if (tipo === "rock") {
-      index += 5
-    } else if (tipo === "bug") {
-      index += 6
-    } else if (tipo === "ghost") {
-      index += 7
-    } else if (tipo === "steel") {
-      index += 8
-    } else if (tipo === "fire") {
-      index += 9
-    } else if (tipo === "water") {
-      index += 10
-    } else if (tipo === "grass") {
-      index += 11
-    } else if (tipo === "electric") {
-      index += 12
-    } else if (tipo === "psychic") {
-      index += 13
-    } else if (tipo === "ice") {
-      index += 14
-    } else if (tipo === "dragon") {
-      index += 15
-    } else if (tipo === "dark") {
-      index += 16
-    } else if (tipo === "fairy") {
-      index += 17
-    } else {
-      index += 18
-    }
-    console.log(index)
-    return colorBg[index]
-
-  }
-  const bgColor = cambioColor(dataPokemon.types[0].type.name)
-   */
-   /*  const imagePokemon = dataPokemon.sprites.other.home.front_default; */
-
-   {/* <Link href={`info/${dataPokemon.id}`}>
-      <div className=" rounded-2xl border border-black border-solid p-2 bg-slate-900">
-        <div className={bgColor} >
-          <div className=" flex flex-row w-[400px] items-center justify-center">
-            <div className="flex flex-col w-1/3 ">
-              <h1 className=" text-xl font-bold text-white">{dataPokemon.name}</h1>
-              <p className=" text-2xl font-medium text-white">{tipo}</p>
-            </div>
-            <div className=" gap-1 flex">
-              <div className={bgColor}>
-                  <img src={imagePokemon} alt="imagen de pokemon" className=" w-[200px] h-[200px] rounded-lg" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Link> */}
+ 
