@@ -86,7 +86,7 @@ function CardPokemon({ url }) {
                 <p className=" text-2xl font-medium text-white">Cargando ...</p>
               </div>
               <div className=" gap-1 flex">
-                <div >
+                <div className=' animate-spin'>
                 {<Loading/>}
                 </div>
               </div>
